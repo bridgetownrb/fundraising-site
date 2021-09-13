@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% render "head", metadata: site.metadata, title: page.title %}
+  </head>
+  <body class="{{ page.layout }} {{ page.page_class }}">
+    {% render "navbar", metadata: site.metadata, page: page %}
+
+    <section>
+      {% render "thermometer", funding: site.data.funding %}
+    </section>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <section>
+      {% render "thermometer", funding: site.data.funding %}
+    </section>
+
+    {% render "donate", funding: site.data.funding %}
+    {% render "footer", metadata: site.metadata %}
+  </body>
+</html>

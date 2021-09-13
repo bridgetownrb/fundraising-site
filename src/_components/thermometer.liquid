@@ -1,0 +1,19 @@
+<h2 style="margin-bottom:1.75rem">Our Fundraising Progress</h2>
+
+<p style="max-width:700px; margin-left:auto; margin-right:auto">
+  <sl-progress-bar percentage="{{ funding.percentage }}" style="--height:40px; --indicator-color:var(--color-dark-green)">
+    <strong style="font-size:150%">${{ funding.current }}</strong>
+  </sl-progress-bar>
+</p>
+
+<h3 style="color:rgb(var(--sl-color-neutral-500))">
+  Goal: <ui-label style="color:var(--color-orange); letter-spacing:0.02em; text-shadow:2px 2px 2px var(--color-brick)">${{ funding.goal }}</ui-label>
+</h3>
+
+
+<p style="margin-top:3rem;text-align:center">
+  <sl-button data-open-donate type="success" size="large">
+    <sl-icon slot="prefix" library="remixicon" name="finance/bank-card-fill"></sl-icon>
+    <strong>Donate Today</strong>
+  </sl-button>
+</p>
