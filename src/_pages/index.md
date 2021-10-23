@@ -6,7 +6,7 @@ layout: default
 
 <section-wrapper style="padding-top:5rem"><section markdown="1">
 
-## The WWW (Web We Want)
+## Building the WWW (Web We Want)
 
 **TypeScript functions** and **React components**. Those are the building blocks of the modern web. (Or so we have been told.)
 
@@ -80,6 +80,8 @@ Isn't Ruby dead? ([No.](https://isrubydead.com){:target="_blank"}) What about Ra
 
 ## Here's What Will Happen
 {:.serif}
+
+
 
 * Yes, this is a thing.
 * Yes, this is another thing.
