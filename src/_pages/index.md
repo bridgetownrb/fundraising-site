@@ -81,14 +81,19 @@ Isn't Ruby dead? ([No.](https://isrubydead.com){:target="_blank"}) What about Ra
 ## Here's What Will Happen
 {:.serif}
 
+Estimating software development?? Are we out of our minds??! Perhaps, but we just want you to know we've thought a lot about what can get done for $5000. Here's a summary of our plan:
 
+* Revamp documentation to offer newbie-friendly tutorials and code samples:	**8 hours**
+* New website build based off rebranded design mockups:	**12 hours**
+* Address outstanding v1 issues: 	**10 hours**
+* Shepherd 1.0 alpha/beta/stable release cycle:	**10 hours**
+* Write official upgrade guide for Jekyll users: **5 hours**
+* Complete extensive YARD comments for API-level documentation:	**5 hours**
 
-* Yes, this is a thing.
-* Yes, this is another thing.
+And what would a fundraising campaign be without stretch goals?
 
-Blah blah.
-
-Wee wee!
+* Over **$5500**: a starter kit featuring ...
+* Over **$7000**: a detailed tutorial with code samples showing Bridgetown and a Rails API (including ActiveRecord) mounted in the same repo via Rack! 🤯
 
 </section></section-wrapper>
 
