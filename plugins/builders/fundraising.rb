@@ -5,7 +5,7 @@ class Fundraising < SiteBuilder
         [
           [
             ((site.data.funding.current.to_f / site.data.funding.goal.to_f) * 100).ceil,
-            12
+            15
           ].max,
           100
         ].min

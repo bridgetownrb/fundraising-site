@@ -107,6 +107,14 @@ h2 {
   @media (max-width: 499px) {
     font-size: 2.5em;
   }
+
+  &.serif {
+    font-size: 3.2em;
+
+    @media (max-width: 499px) {
+      font-size: 2.7em;
+    }
+  }
 }
 
 h3 {
@@ -144,6 +152,9 @@ sl-button[type="success"][size="large"]::part(base) {
   }
 }
 
+sl-dialog::part(title) {
+  font-weight: 575;
+}
 sl-dialog::part(footer) {
   z-index: 100;
 }
@@ -177,12 +188,30 @@ section-wrapper[invert], footer {
 }
 
 section {
-  padding: 2rem 0.5rem;
+  padding: 2rem 0.75rem;
   margin: 0 auto;
   max-width: 65rem;
 
   @media (min-width: 500px) {
     padding: 2rem 3rem;
+  }
+
+  & ul, & ol {
+    margin-left: var(--sl-spacing-x-large);
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    & > li {
+      margin: 0 0 var(--sl-spacing-small);
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  & ul {
+    list-style-type: square;
   }
 }
 
