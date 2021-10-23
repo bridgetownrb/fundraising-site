@@ -4,7 +4,7 @@
 #
 # Learn more at: http://roda.jeremyevans.net
 
-require "dotenv/load"
+require "dotenv/load" unless Bridgetown.env.production?
 
 class RodaApp < Bridgetown::Rack::Roda
   # Add Roda configuration here if needed

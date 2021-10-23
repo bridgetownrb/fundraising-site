@@ -1,4 +1,4 @@
-require "dotenv/load"
+require "dotenv/load" unless Bridgetown.env.production?
 require_relative "../lib/stripe_payment"
 
 class SiteBuilder < Bridgetown::Builder
