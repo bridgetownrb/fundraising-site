@@ -31,7 +31,10 @@
 
     <hr />
 
-    <p style="text-align:center">Or choose a <a href="https://github.com/sponsors/jaredcwhite?frequency=one-time&sponsor=jaredcwhite" target="_blank">one-time payment option on GitHub</a></p>
+    <p style="text-align:center">
+      Or choose a <a href="https://github.com/sponsors/jaredcwhite?frequency=one-time&sponsor=jaredcwhite" target="_blank">one-time payment option on 
+      GitHub<sl-icon library="remixicon" name="system/external-link" style="vertical-align:-0.12em;margin-left:0.3em"></sl-icon>
+    </a></p>
   </section>
 
   <section id="stripe-payment-details" hidden>
@@ -40,7 +43,7 @@
         <sl-input required name="email" type="email" label="Email address" placeholder="me@domain.com" style="font-size:90%; text-align:left; --sl-input-font-size-medium:100%; --sl-input-label-font-size-medium:93%"></sl-input>
         <sl-button type="success">
           <sl-icon slot="suffix" library="remixicon" name="finance/bank-card"></sl-icon>
-          Complete Payment
+          Complete <span></span> Payment
         </sl-button>
       </stripe-payment-footer>
     </stripe-payment>

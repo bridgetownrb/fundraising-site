@@ -1,12 +1,16 @@
-import '@shoelace-style/shoelace/dist/themes/light.css';
-import '@shoelace-style/shoelace/dist/components/alert/alert.js';
-import '@shoelace-style/shoelace/dist/components/button/button.js';
-import '@shoelace-style/shoelace/dist/components/dialog/dialog.js';
-import '@shoelace-style/shoelace/dist/components/form/form.js';
-import '@shoelace-style/shoelace/dist/components/icon/icon.js';
-import '@shoelace-style/shoelace/dist/components/input/input.js';
-import '@shoelace-style/shoelace/dist/components/progress-bar/progress-bar.js';
-import { registerIconLibrary } from '@shoelace-style/shoelace/dist/utilities/icon-library.js';
+import '@shoelace-style/shoelace/dist/themes/light.css'
+import '@shoelace-style/shoelace/dist/components/alert/alert.js'
+import '@shoelace-style/shoelace/dist/components/button/button.js'
+import '@shoelace-style/shoelace/dist/components/dialog/dialog.js'
+import '@shoelace-style/shoelace/dist/components/form/form.js'
+import '@shoelace-style/shoelace/dist/components/icon/icon.js'
+import '@shoelace-style/shoelace/dist/components/input/input.js'
+import '@shoelace-style/shoelace/dist/components/progress-bar/progress-bar.js'
+import { registerIconLibrary } from '@shoelace-style/shoelace/dist/utilities/icon-library.js'
+
+import smoothscroll from 'smoothscroll-polyfill'
+// kick off the polyfill!
+smoothscroll.polyfill()
 
 import "index.css"
 
@@ -43,23 +47,36 @@ const setupTestimonials = () => {
 
 window.addEventListener("DOMContentLoaded", () => {
   const dialog = document.querySelector("sl-dialog#donation")
-  const closeButton = dialog.querySelector("sl-button[slot='footer']")
 
-  closeButton.addEventListener("click", () => dialog.hide())
+  if (dialog) {
+    if ((window.innerWidth < 500 && window.innerHeight < 740) || window.innerHeight < 700) {
+      dialog.classList.add("scrollable")
+    }
 
-  document.querySelectorAll("sl-button[data-open-donate]").forEach(item => {
-    item.addEventListener("click", () => {
-      dialog.show()
+    const closeButton = dialog.querySelector("sl-button[slot='footer']")
+
+    closeButton.addEventListener("click", () => dialog.hide())
+
+    document.querySelectorAll("sl-button[data-open-donate]").forEach(item => {
+      item.addEventListener("click", () => {
+        dialog.show()
+        setTimeout(() => {
+          dialog.shadowRoot.querySelector("[part='body']").scrollTo({top: 40, behavior: "smooth"})
+          setTimeout(() => {
+            dialog.shadowRoot.querySelector("[part='body']").scrollTo({top: 0, behavior: "smooth"})
+          }, 500)
+        }, 400)
+      })
     })
-  })
 
-  dialog.querySelector("sl-form").addEventListener("sl-submit", () => {
-    dialog.querySelector("section#payment-options").hidden = true
-    dialog.querySelector("sl-button[slot='footer'").remove()
-    dialog.querySelector("section#stripe-payment-details").hidden = false
-    const amount = dialog.querySelector("#contribution-amount").value
-    dialog.querySelector("stripe-payment").display(amount)
-  })
+    dialog.querySelector("sl-form").addEventListener("sl-submit", () => {
+      dialog.querySelector("section#payment-options").hidden = true
+      dialog.querySelector("sl-button[slot='footer'").remove()
+      dialog.querySelector("section#stripe-payment-details").hidden = false
+      const amount = dialog.querySelector("#contribution-amount").value
+      dialog.querySelector("stripe-payment").display(amount)
+    })
+  }
 
   setupTestimonials()
 })

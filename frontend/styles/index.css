@@ -144,6 +144,15 @@ sl-button[type="success"][size="large"]::part(base) {
   }
 }
 
+sl-dialog::part(footer) {
+  z-index: 100;
+}
+sl-dialog.scrollable {
+  &::part(footer) {
+    box-shadow: 0px -10px 20px rgba(0,0,0,0.1);
+  }
+}
+
 main {
   background: white;
   margin: 0 0 4rem;

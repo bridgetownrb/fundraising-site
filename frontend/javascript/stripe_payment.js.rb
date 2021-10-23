@@ -7,7 +7,17 @@ class StripePayment < HTMLElement
     @stripe ||= Stripe(self.get_attribute("public-key"))
   end
 
-  async def display(amount)
+  async def display(raw_amount)
+    amount = parse_float(raw_amount)
+    unless amount
+      show_error("The amount you entered isn't a valid number. Please try again.")
+      self.closest("sl-dialog").open = false
+      set_timeout 3000 do
+        location.reload()
+      end
+      return
+    end
+
     footer = self.query_selector("stripe-payment-footer")
     self.inner_html = %(<form id="stripe-payment-form"><div id="stripe-payment-element" style="min-height:220px"></div></form>)
     if footer
@@ -15,6 +25,7 @@ class StripePayment < HTMLElement
       footer.query_selector("sl-button").add_event_listener(:click) do
         handle_submit()
       end
+      footer.query_selector("sl-button span").textContent = "$#{amount}"
     end
     self.loading = true
 

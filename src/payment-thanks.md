@@ -14,10 +14,12 @@ Bridgetown owes you a debt of gratitude. We appreciate your support of open sour
 
 Please be sure to follow us on Twitter and join the Discord Chat to keep tabs on Bridgetown's progress.
 
-And don't forget to [share our fundraising campaign](/) with your friends, neighbors, and co-workers!  
+And don't forget to [share our fundraising campaign](/) with your friends, neighbors, and co-workers!
+
+**Note:** the charge description will be under "[Whitefusion](https://www.whitefusion.studio){:target="_blank"}", Bridgetown's primary commercial sponsor. If you have any questions, [please let me know](mailto:jared@whitefusion.studio).  
 &nbsp;
 
-_From the bottom of my heart,_
+_Cheers,_
 
 _Jared White,_  
 _Lead Maintainer of Bridgetown_
