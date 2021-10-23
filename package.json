@@ -25,6 +25,7 @@
     "postcss-focus-within": "^4.0.0"
   },
   "dependencies": {
+    "@ruby2js/webpack-loader": "^2.0.2",
     "@shoelace-style/shoelace": "^2.0.0-beta.51"
   }
 }

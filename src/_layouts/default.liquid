@@ -6,19 +6,26 @@
   <body class="{{ page.layout }} {{ page.page_class }}">
     {% render "navbar", metadata: site.metadata, page: page %}
 
-    <section>
-      {% render "thermometer", funding: site.data.funding %}
-    </section>
+    {% unless resource.data.hide_thermometer %}
+      <section>
+        {% render "thermometer", funding: site.data.funding %}
+      </section>
+    {% endunless %}
 
     <main>
       {{ content }}
     </main>
 
-    <section>
-      {% render "thermometer", funding: site.data.funding %}
-    </section>
+    {% unless resource.data.hide_thermometer %}
+      <section>
+        {% render "thermometer", funding: site.data.funding %}
+      </section>
 
-    {% render "donate", funding: site.data.funding %}
+      {% render "donate",
+          funding: site.data.funding,
+          STRIPE_PUBLIC_KEY: site.data.STRIPE_PUBLIC_KEY,
+          PAYPAL_CLIENT_ID: site.data.PAYPAL_CLIENT_ID %}
+    {% endunless %}
     {% render "footer", metadata: site.metadata %}
   </body>
 </html>

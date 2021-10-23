@@ -15,7 +15,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 #
 
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://fundraising.bridgetownrb.com" # the base hostname & protocol for your site, e.g. https://example.com
 
 permalink: pretty
 

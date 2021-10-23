@@ -9,6 +9,9 @@ class Fundraising < SiteBuilder
           ].max,
           100
         ].min
+
+      site.data.STRIPE_PUBLIC_KEY = ENV['STRIPE_PUBLIC_KEY']
+      site.data.PAYPAL_CLIENT_ID = ENV['PAYPAL_CLIENT_ID']
     end
   end
 end

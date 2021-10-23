@@ -1,12 +1,16 @@
 import '@shoelace-style/shoelace/dist/themes/light.css';
+import '@shoelace-style/shoelace/dist/components/alert/alert.js';
 import '@shoelace-style/shoelace/dist/components/button/button.js';
 import '@shoelace-style/shoelace/dist/components/dialog/dialog.js';
+import '@shoelace-style/shoelace/dist/components/form/form.js';
 import '@shoelace-style/shoelace/dist/components/icon/icon.js';
 import '@shoelace-style/shoelace/dist/components/input/input.js';
 import '@shoelace-style/shoelace/dist/components/progress-bar/progress-bar.js';
 import { registerIconLibrary } from '@shoelace-style/shoelace/dist/utilities/icon-library.js';
 
 import "index.css"
+
+import "./stripe_payment.js.rb"
 
 registerIconLibrary('remixicon', {
   resolver: name => {
@@ -26,7 +30,7 @@ const setupTestimonials = () => {
         e.target.style.animation = ""
         let nextEl = e.target.nextElementSibling
         if (!nextEl) nextEl = document.querySelector('testimonials-list li')
-        console.log("setting nextEl!", nextEl)
+        //console.log("setting nextEl!", nextEl)
         nextEl.style.animation = "fadeInOut ease 6s"
       }, 100)
     })
@@ -38,16 +42,23 @@ const setupTestimonials = () => {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  const dialog = document.querySelector('.dialog-overview');
-  const openButton = dialog.nextElementSibling;
-  const closeButton = dialog.querySelector('sl-button[slot="footer"]');
+  const dialog = document.querySelector("sl-dialog#donation")
+  const closeButton = dialog.querySelector("sl-button[slot='footer']")
 
-  closeButton.addEventListener('click', () => dialog.hide());
+  closeButton.addEventListener("click", () => dialog.hide())
 
   document.querySelectorAll("sl-button[data-open-donate]").forEach(item => {
-    item.addEventListener('click', () => {
+    item.addEventListener("click", () => {
       dialog.show()
     })
+  })
+
+  dialog.querySelector("sl-form").addEventListener("sl-submit", () => {
+    dialog.querySelector("section#payment-options").hidden = true
+    dialog.querySelector("sl-button[slot='footer'").remove()
+    dialog.querySelector("section#stripe-payment-details").hidden = false
+    const amount = dialog.querySelector("#contribution-amount").value
+    dialog.querySelector("stripe-payment").display(amount)
   })
 
   setupTestimonials()

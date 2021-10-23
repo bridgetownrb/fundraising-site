@@ -5,7 +5,10 @@ module StripePayment
   def self.intent(dollars:)
     Stripe::PaymentIntent.create(
       amount: dollars * 100,
-      currency: "usd"
+      currency: "usd",
+      metadata: {
+        purpose: "Bridgetown Fundraising",
+      },
     )
   end
 end

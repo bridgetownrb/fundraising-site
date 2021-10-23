@@ -47,6 +47,10 @@
   }
 }
 
+*[hidden] {
+  display: none;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -171,6 +175,10 @@ section {
   @media (min-width: 500px) {
     padding: 2rem 3rem;
   }
+}
+
+sl-dialog section {
+  padding: 0 !important;
 }
 
 header {
@@ -304,4 +312,14 @@ p.heading-icon {
 
 section-wrapper[invert] p.heading-icon {
   color: var(--color-medium-green);
+}
+
+stripe-payment-footer {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+
+  & sl-button {
+    margin-top: 1rem;
+  }
 }

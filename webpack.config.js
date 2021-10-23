@@ -2,6 +2,21 @@ const { merge } = require('webpack-merge')
 
 var config = require("./config/webpack.defaults.js")
 
+var ruby2jsconfig = {
+  test: /\.js\.rb$/,
+  use: [
+    {
+      loader: "esbuild-loader",
+      options: {
+        target: 'es2016'
+      },
+    },
+    "@ruby2js/webpack-loader"
+  ]
+}
+
+config.module.rules.push(ruby2jsconfig)
+
 // Add any overrides to the default webpack config here:
 //
 // Eg:

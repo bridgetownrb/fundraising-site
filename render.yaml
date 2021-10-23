@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: bridgetown-fundraising
+    env: static
+    repo: https://github.com/bridgetownrb/fundraising-site
+    buildCommand: bin/bridgetown deploy
+    staticPublishPath: ./output
+    envVars:
+      - key: BRIDGETOWN_ENV
+        value: production
+      - fromGroup: payment-keys
+    routes:
+      - type: rewrite
+        source: /payment_intents
+        destination: https://bridgetown-fundraising-api.onrender.com/payment_intents
+  - type: web
+    name: bridgetown-fundraising-api
+    env: ruby
+    repo: https://github.com/bridgetownrb/fundraising-site
+    buildCommand: bundle install && yarn install && bin/bridgetown frontend:build
+    startCommand: bin/bridgetown start
+    envVars:
+      - key: BRIDGETOWN_ENV
+        value: production
+      - fromGroup: payment-keys
