@@ -12,7 +12,7 @@ title: "Thanks For Your Contribution"
 
 Bridgetown owes you a debt of gratitude. We appreciate your support of open source and the Ruby web dev community.
 
-Please be sure to follow us on Twitter and join the Discord Chat to keep tabs on Bridgetown's progress.
+Please be sure to [follow us on Twitter](https://twitter.com/bridgetownrb) and [join the Discord Chat](https://discord.gg/4E6hktQGz4) to keep tabs on Bridgetown's progress.
 
 And don't forget to [share our fundraising campaign](/) with your friends, neighbors, and co-workers!
 

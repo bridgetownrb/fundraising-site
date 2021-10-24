@@ -10,7 +10,7 @@ layout: default
 
 **TypeScript functions** and **React components**. Those are the building blocks of the modern web. (Or so we have been told.)
 
-Does that vision of the web appeal to you? _Certainly doesn't to me._ I care about **Ruby**. I care about **object-oriented programming**. I care about **diverse ecosystems**. I care about **lean frontends** and **robust fullstack frameworks**. If that sounds right up your alley, then say hello to the **low-config**, **quick-install**, **surprisingly-powerful** progressive generator: [**Bridgetown**{:style="text-transform:uppercase"}](https://www.bridgetownrb.com){:target="_blank"}.
+Does that vision of the web appeal to you? _Certainly doesn't to me._ I care about **Ruby**. I care about **object-oriented programming**. I care about **diverse ecosystems**. I care about **lean frontends** and **robust fullstack frameworks**. If that sounds right up your alley, then say hello to the **low-config**, **quick-install**, **surprisingly-powerful** progressive generator [**Bridgetown**{:style="text-transform:uppercase"}](https://www.bridgetownrb.com){:target="_blank"}.
 
 <p style="max-width: 800px;margin-left: auto;margin-right: auto;margin-top:3em"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 2261 589" version="1.1" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
   <g transform="matrix(1,0,0,1,-169.817,-343.833)">
@@ -22,7 +22,6 @@ Does that vision of the web appeal to you? _Certainly doesn't to me._ I care abo
     </g>
   </g>
 </svg></p>
-
 
 Bridgetown started out life as a "static site generator" (initially a fork of [Jekyll](https://jekyllrb.com){:target="_blank"}), but **it has grown exponentially into so much more**. We recently unveiled [**a 2021-2022 roadmap for Bridgetown**](https://www.bridgetownrb.com/future/roadmap-to-1.0/){:target="_blank"} and have already delivered on a number of its promises with the release of [Bridgetown 1.0 alpha](https://edge.bridgetownrb.com){:target="_blank"}. Our mission has and will always be thus: to offer a modern Ruby web framework which can **compete favorably with the best Jamstack options on the market**.
 
@@ -40,9 +39,10 @@ We're getting there, but to leap over the finish line, **we need your help**. Fo
 ## The State of Open Source Monetization
 {:.serif}
 
-There are a wide variety of ways in which open source software projects can make money (in order to pay for labor, marketing, etc.). Some of the most well-known options include:
+There are a wide variety of ways in which open source software projects can make money (in order to pay for labor, marketing, fees, etc.). Some of the most well-known options include:
 
 * Sponsorships / Donations
+* Educational Materials / Training
 * Expert Consulting Services
 * Open Source Core with Closed Source "Pro" Addons
 * Commercial SaaS/Hosting as the primary delivery mechanism and open source is a means to that end
@@ -92,21 +92,52 @@ Estimating software development?? Are we out of our minds??! Perhaps, but we jus
 
 And what would a fundraising campaign be without stretch goals?
 
-* Over **$5500**: a starter kit featuring ...
-* Over **$7000**: a detailed tutorial with code samples showing Bridgetown and a Rails API (including ActiveRecord) mounted in the same repo via Rack! 🤯
+* Over **$5500**: add a _superfast_ esbuild-based frontend bundling solution as an alternative to Webpack
+* Over **$7000**: create a detailed tutorial with code samples showing Bridgetown and a Rails API (including ActiveRecord!) mounted in the same repo via Rack 🤯
 
 </section></section-wrapper>
 
 <section-wrapper><section markdown="1">
 
+<p class="heading-icon">
+  <sl-icon library="remixicon" name="map/earth"></sl-icon>
+</p>
+
 ## Bridgetown in the Wild
 {:.serif.colorful}
 
-Don't take our word for it! People are already using Bridgetown to build amazing things.
+**People are already using Bridgetown to build amazing things!** Here are just a few of the projects launched over the past 18 months:
 
-We've also been featured on podcasts and articles across the web! Check it out:
+* [Eager](https://eager.app){:target="_blank"}
+* [Mrujs docs](https://mrujs.com){:target="_blank"}
+* [JaredWhite.com](https://jaredwhite.com){:target="_blank"}
+* [Doorkeep](https://doorkeep.co){:target="_blank"}
+* [Andy Peters](https://andypeters.com){:target="_blank"}
+* [Crow's Nest](https://www.crowsnestapp.com){:target="_blank"}
+* [Felipe Vogel](https://fpsvogel.com){:target="_blank"}
+* [Kris Bogdanov](https://krisbogdanov.com){:target="_blank"}
+* [William Kennedy](https://williamkennedy.ninja){:target="_blank"}
+* [RUBY3.dev](https://www.ruby3.dev){:target="_blank"}
 
-* Remote Ruby Podcast
-* The Ruby on Rails Podcast
+In addition, I (Jared) have appeared in podcasts and presentations across the web! Check it out:
+
+* [The Ruby on Rails Podcast](https://www.therubyonrailspodcast.com/374){:target="_blank"}
+* [Code with Jason](https://www.codewithjason.com/code-with-jason-podcast/episodes/{:target="_blank"}115-organizing-large-rails-apps-with-jared-white-DIQGZHGQ/){:target="_blank"}
+* [Computer Science: Just the Useful Bits](https://justtheusefulbits.com/jtub/jared-white-the-trip-from-php-to-ruby/){:target="_blank"}
+* [Remote Ruby](https://remoteruby.com/78){:target="_blank"}
+* [The Drunken UX Podcast](https://drunkenux.com/podcast/dux65/){:target="_blank"}
+* [Ruby on the Jamstack, or, Why I Forked Jekyll (YouTube)](https://www.youtube.com/watch?v=btOuSOZd-6c){:target="_blank"}
+
+</section></section-wrapper>
+
+<section-wrapper invert><section markdown="1">
+
+<p class="heading-icon">
+  <sl-icon library="remixicon" name="user/group-fill"></sl-icon>
+</p>
+
+## Join the Campaign
+
+Are you ready to help get **Bridgetown 1.0** over the hump and onto a stable, widespread release? Are you willing to pitch in to ensure the healthy future of Ruby as a stalwart pillar of progressive web dev? Are you excited to see a viable alternative emerge to the Gatsby's and the Hugo's of the world? Are you sick of reading these dramatic questions?! Then tap the **Donate Today** button below and let's prove once again that **the Ruby community rocks**! 🙏
 
 </section></section-wrapper>
