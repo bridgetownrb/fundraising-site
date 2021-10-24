@@ -7,7 +7,7 @@
     {% render "navbar", metadata: site.metadata, page: page %}
 
     {% unless resource.data.hide_thermometer %}
-      <section>
+      <section class="fade-in-animation">
         {% render "thermometer", funding: site.data.funding %}
       </section>
     {% endunless %}

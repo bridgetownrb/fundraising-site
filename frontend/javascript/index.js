@@ -79,4 +79,10 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   setupTestimonials()
+
+  setTimeout(() => {
+    document.querySelectorAll("sl-progress-bar[animate-to-value]").forEach(progressBar => {
+      progressBar.value = progressBar.getAttribute("animate-to-value")
+    })
+  }, 800)
 })

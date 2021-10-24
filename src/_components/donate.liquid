@@ -1,4 +1,4 @@
-<sl-dialog id="donation" label="Contribute to Our ${{ funding.goal }} Goal" style="--body-spacing:0.75rem 1.25rem">
+<sl-dialog id="donation" label="Contribute to Our ${{ funding.goal | string | replace: '000', ',000' }} Goal" style="--body-spacing:0.75rem 1.25rem">
 
   <section id="payment-options">
     <p>Enter the amount you'd like to contribute (in USD):</p>

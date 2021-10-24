@@ -1,13 +1,13 @@
 <h2 style="margin-bottom:1.75rem">Our Fundraising Progress</h2>
 
 <p style="max-width:700px; margin-left:auto; margin-right:auto">
-  <sl-progress-bar value="{{ funding.percentage }}" style="--height:40px; --indicator-color:var(--color-medium-green)">
+  <sl-progress-bar value="0" animate-to-value="{{ funding.percentage }}" style="--height:40px; --indicator-color:var(--color-medium-green)">
     <strong style="font-size:150%">${{ funding.current }}</strong>
   </sl-progress-bar>
 </p>
 
 <h3 style="color:rgb(var(--sl-color-neutral-500))">
-  Goal: <ui-label style="color:var(--color-orange); letter-spacing:0.02em; text-shadow:2px 2px 2px var(--color-brick)">${{ funding.goal }}</ui-label>
+  Goal: <ui-label style="color:var(--color-orange); letter-spacing:0.02em; text-shadow:2px 2px 2px var(--color-brick)">${{ funding.goal | string | replace: '000', ',000'}}</ui-label>
 </h3>
 
 

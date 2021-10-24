@@ -4,7 +4,7 @@
 layout: default
 ---
 
-<section-wrapper style="padding-top:5rem"><section markdown="1">
+<section-wrapper style="padding-top:3rem"><section markdown="1">
 
 ## Building the WWW (Web We Want)
 
@@ -25,7 +25,7 @@ Does that vision of the web appeal to you? _Certainly doesn't to me._ I care abo
 
 Bridgetown started out life as a "static site generator" (initially a fork of [Jekyll](https://jekyllrb.com){:target="_blank"}), but **it has grown exponentially into so much more**. We recently unveiled [**a 2021-2022 roadmap for Bridgetown**](https://www.bridgetownrb.com/future/roadmap-to-1.0/){:target="_blank"} and have already delivered on a number of its promises with the release of [Bridgetown 1.0 alpha](https://edge.bridgetownrb.com){:target="_blank"}. Our mission has and will always be thus: to offer a modern Ruby web framework which can **compete favorably with the best Jamstack options on the market**.
 
-We're getting there, but to leap over the finish line, **we need your help**. For our first major fundraising round, we're looking to raise <strong>$5000</strong> USD. 100% of the proceeds will go directly towards active development of open source software which benefits the Ruby web dev community at large. **Will you be a part of this effort?** 
+We're getting there, but to leap over the finish line, **we need your help**. For our first major fundraising round, we're looking to raise <strong>${{ site.data.funding.goal | string | replace: '000', ',000'}}</strong> USD. 100% of the proceeds will go directly towards active development of open source software which benefits the Ruby webdev community at large. **Will you be a part of this effort?** 
 
 </section></section-wrapper>
 
@@ -60,7 +60,7 @@ We're not here to debate various monetization strategies, but to reiterate that 
 <section-wrapper><section markdown="1">
 
 <p class="heading-icon">
-  <sl-icon library="remixicon" name="system/question"></sl-icon>
+  <sl-icon library="remixicon" name="system/question-fill"></sl-icon>
 </p>
 
 ## So Why Ruby?
@@ -68,7 +68,7 @@ We're not here to debate various monetization strategies, but to reiterate that 
 
 Isn't Ruby dead? ([No.](https://isrubydead.com){:target="_blank"}) What about Rails? ([Still a no.](https://israilsdead.com){:target="_blank"}) Actually it seems like **Ruby is making quite the comeback lately**—with usage on the rise, huge ecosystem advancements (some related to the era of Ruby 3), a heated hiring market, and a general industry-wide trend towards giving soup-to-nuts fullstack frameworks a second look.
 
-**We believe Ruby remains one of the best languages for building web sites & apps today.** Unfortunately, even as we've witnessed the rise of numerous "[Jamstack](https://jamstack.org){:target="_blank"}" frameworks and static site generators which are reshaping the way websites get built, Ruby-based solutions largely haven't kept up the pace. It's not Ruby's fault though. **And we believe there's still time to turn this ship around.** While other languages (primarily JavaScript and Go) have proven their worth in these new architectural diagrams, Ruby comes with its own strengths: an incredible **object-oriented ethos**, **fabulous standard library** (plus ActiveSupport!), a myriad of deep idioms which offer **huge productivity gains**, and a **delightful [MINASWAN](https://en.wiktionary.org/wiki/MINASWAN) community**. Ruby on Rails continues to lead the industry in world-class DX as a server-side technology, and we hope that **Bridgetown** will play a leading role in _expanding_ the Ruby market with new solutions and expectations for how the content-first & CDN-native modern web gets built.
+**We believe Ruby remains one of the best languages for building web sites & apps today.** Unfortunately, even as we've witnessed the rise of numerous "[Jamstack](https://jamstack.org){:target="_blank"}" frameworks and static site generators which are reshaping the way websites get built, Ruby-based solutions largely haven't kept up the pace. It's not Ruby's fault though. **And we believe there's still time to turn this ship around.** While other languages (primarily JavaScript and Go) have proven their worth in these new architectural diagrams, Ruby comes with its own strengths: an incredible **object-oriented ethos**, **fabulous standard library** (plus ActiveSupport!), a myriad of deep idioms which offer **huge productivity gains**, and a **delightful [MINASWAN](https://en.wiktionary.org/wiki/MINASWAN){:target="_blank"} community**. Ruby on Rails continues to lead the industry in world-class DX as a server-side technology, and we hope that **Bridgetown** will play a leading role in _expanding_ the Ruby market with new solutions and expectations for how the content-first & CDN-native modern web gets built.
 
 </section></section-wrapper>
 
@@ -81,16 +81,16 @@ Isn't Ruby dead? ([No.](https://isrubydead.com){:target="_blank"}) What about Ra
 ## Here's What Will Happen
 {:.serif}
 
-Estimating software development?? Are we out of our minds??! Perhaps, but we just want you to know we've thought a lot about what can get done for $5000. Here's a summary of our plan:
+Estimating software development?? Are we out of our minds??! Perhaps, but we just want you to know we've thought a lot about what can get done for ${{ site.data.funding.goal | string | replace: '000', ',000'}}. Here's a summary of our plan:
 
 * Revamp documentation to offer newbie-friendly tutorials and code samples:	**8 hours**
-* New website build based off rebranded design mockups:	**12 hours**
+* Website rebuild based off rebranded design mockups:	**12 hours**
 * Address outstanding v1 issues: 	**10 hours**
+* Complete YARD comments for API-level documentation:	**5 hours**
 * Shepherd 1.0 alpha/beta/stable release cycle:	**10 hours**
 * Write official upgrade guide for Jekyll users: **5 hours**
-* Complete extensive YARD comments for API-level documentation:	**5 hours**
 
-And what would a fundraising campaign be without stretch goals?
+And what would a fundraising campaign be without _stretch goals_?
 
 * Over **$5500**: add a _superfast_ esbuild-based frontend bundling solution as an alternative to Webpack
 * Over **$7000**: create a detailed tutorial with code samples showing Bridgetown and a Rails API (including ActiveRecord!) mounted in the same repo via Rack 🤯
@@ -136,8 +136,8 @@ In addition, I (Jared) have appeared in podcasts and presentations across the we
   <sl-icon library="remixicon" name="user/group-fill"></sl-icon>
 </p>
 
-## Join the Campaign
+## Join the Campaign 👀
 
-Are you ready to help get **Bridgetown 1.0** over the hump and onto a stable, widespread release? Are you willing to pitch in to ensure the healthy future of Ruby as a stalwart pillar of progressive web dev? Are you excited to see a viable alternative emerge to the Gatsby's and the Hugo's of the world? Are you sick of reading these dramatic questions?! Then tap the **Donate Today** button below and let's prove once again that **the Ruby community rocks**! 🙏
+Are you ready to help get **Bridgetown 1.0** over the hump and onto a stable, widespread release? Are you willing to pitch in to ensure the healthy future of Ruby as a **stalwart pillar of progressive web dev**? Are you excited to see a **viable alternative emerge** to the Gatsby's and the Hugo's of the world? Are you sick of reading these dramatic questions?! Then tap the **Donate Today** button below and let's prove once again that **the Ruby community rocks**! 🙏
 
 </section></section-wrapper>
