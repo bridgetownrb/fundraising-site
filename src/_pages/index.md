@@ -25,7 +25,7 @@ Does that vision of the web appeal to you? _Certainly doesn't to me._ I care abo
 
 Bridgetown started out life as a "static site generator" (initially a fork of [Jekyll](https://jekyllrb.com){:target="_blank"}), but **it has grown exponentially into so much more**. We recently unveiled [**a 2021-2022 roadmap for Bridgetown**](https://www.bridgetownrb.com/future/roadmap-to-1.0/){:target="_blank"} and have already delivered on a number of its promises with the release of [Bridgetown 1.0 alpha](https://edge.bridgetownrb.com){:target="_blank"}. Our mission has and will always be thus: to offer a modern Ruby web framework which can **compete favorably with the best Jamstack options on the market**.
 
-We're getting there, but to leap over the finish line, **we need your help**. For our first major fundraising round, we're looking to raise <strong>${{ site.data.funding.goal | string | replace: '000', ',000'}}</strong> USD. 100% of the proceeds will go directly towards active development of open source software which benefits the Ruby webdev community at large. **Will you be a part of this effort?** 
+We're getting there, but to leap over the finish line, **we need your help**. For our first major fundraising round, we're looking to raise <strong>${{ site.data.funding.goal | string | replace: '000', ',000'}}</strong> USD. 100% of the proceeds will go directly towards active development of open source software which benefits the Ruby webdev community at large. **Will you be a part of this effort?**
 
 </section></section-wrapper>
 
@@ -121,8 +121,10 @@ Depending on how this campaign goes, we think it's feasible to release a product
 * [Kris Bogdanov](https://krisbogdanov.com){:target="_blank"}
 * [William Kennedy](https://williamkennedy.ninja){:target="_blank"}
 * [RUBY3.dev](https://www.ruby3.dev){:target="_blank"}
+* [fslash42](https://fslash42.com){:target="_blank"}
+* [Helena's Nursery](https://helenas-nursery.com){:target="_blank"}
 
-In addition, I (Jared) have appeared in podcasts and presentations across the web promoting Bridgetown! Check it out:
+In addition, members of the Bridgetown Core Team have appeared in podcasts and presentations across the web promoting Bridgetown! Check it out:
 
 * [The Ruby on Rails Podcast](https://www.therubyonrailspodcast.com/374){:target="_blank"}
 * [Code with Jason](https://www.codewithjason.com/code-with-jason-podcast/episodes/{:target="_blank"}115-organizing-large-rails-apps-with-jared-white-DIQGZHGQ/){:target="_blank"}
@@ -130,6 +132,8 @@ In addition, I (Jared) have appeared in podcasts and presentations across the we
 * [Remote Ruby](https://remoteruby.com/78){:target="_blank"}
 * [The Drunken UX Podcast](https://drunkenux.com/podcast/dux65/){:target="_blank"}
 * [Ruby on the Jamstack, or, Why I Forked Jekyll (YouTube)](https://www.youtube.com/watch?v=btOuSOZd-6c){:target="_blank"}
+* [An Intro to Bridgetown (Presented at the London Ruby Users' Group)](https://assets.lrug.org/videos/2021/february/ayush-newatia-an-intro-to-bridgetown-a-static-site-generator-for-the-modern-jamstack-era-lrug-feb-2021.mp4){:target="_blank"}
+
 
 </section></section-wrapper>
 
