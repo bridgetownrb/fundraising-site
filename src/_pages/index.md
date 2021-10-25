@@ -124,7 +124,7 @@ Depending on how this campaign goes, we think it's feasible to release a product
 * [fslash42](https://fslash42.com){:target="_blank"}
 * [Helena's Nursery](https://helenas-nursery.com){:target="_blank"}
 
-In addition, Members of the Bridgetown Core Team have appeared in podcasts and presentations across the web promoting Bridgetown! Check it out:
+In addition, members of the Bridgetown Core Team have appeared in podcasts and presentations across the web promoting Bridgetown! Check it out:
 
 * [The Ruby on Rails Podcast](https://www.therubyonrailspodcast.com/374){:target="_blank"}
 * [Code with Jason](https://www.codewithjason.com/code-with-jason-podcast/episodes/{:target="_blank"}115-organizing-large-rails-apps-with-jared-white-DIQGZHGQ/){:target="_blank"}
