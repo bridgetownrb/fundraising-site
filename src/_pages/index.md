@@ -95,6 +95,8 @@ And what would a fundraising campaign be without _stretch goals_?
 * Over **$5500**: add a _superfast_ esbuild-based frontend bundling solution as an alternative to Webpack
 * Over **$7000**: create a detailed tutorial with code samples showing Bridgetown and a Rails API (including ActiveRecord!) mounted in the same repo via Rack 🤯
 
+Depending on how this campaign goes, we think it's feasible to release a production-grade Bridgetown 1.0 **by the end of the year**, with any immediate follow-up tasks wrapping up by **February 2022**.
+
 </section></section-wrapper>
 
 <section-wrapper><section markdown="1">
@@ -120,7 +122,7 @@ And what would a fundraising campaign be without _stretch goals_?
 * [William Kennedy](https://williamkennedy.ninja){:target="_blank"}
 * [RUBY3.dev](https://www.ruby3.dev){:target="_blank"}
 
-In addition, I (Jared) have appeared in podcasts and presentations across the web! Check it out:
+In addition, I (Jared) have appeared in podcasts and presentations across the web promoting Bridgetown! Check it out:
 
 * [The Ruby on Rails Podcast](https://www.therubyonrailspodcast.com/374){:target="_blank"}
 * [Code with Jason](https://www.codewithjason.com/code-with-jason-podcast/episodes/{:target="_blank"}115-organizing-large-rails-apps-with-jared-white-DIQGZHGQ/){:target="_blank"}
@@ -139,6 +141,6 @@ In addition, I (Jared) have appeared in podcasts and presentations across the we
 
 ## Join the Campaign 👀
 
-Are you ready to help get **Bridgetown 1.0** over the hump and onto a stable, widespread release? Are you willing to pitch in to ensure the healthy future of Ruby as a **stalwart pillar of progressive web dev**? Are you excited to see a **viable alternative emerge** to the Gatsby's and the Hugo's of the world? Are you sick of reading these dramatic questions?! Then tap the **Donate Today** button below and let's prove once again that **the Ruby community rocks**! 🙏
+Are you ready to help get **Bridgetown 1.0** over the hump and onto a stable, widespread release? Are you willing to pitch in to ensure the healthy future of Ruby as a **stalwart pillar of progressive web dev**? Are you excited to see a **viable alternative emerge** to the Gatsby's and the Hugo's of the world? Are you sick of reading these dramatic questions?! Then tap the **Donate Today** button below and let's prove once more that **the Ruby community rocks**! 🙏
 
 </section></section-wrapper>
