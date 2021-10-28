@@ -39,7 +39,6 @@ class StripePayment < HTMLElement
     )
     data = await response.json()
     client_secret = data.client_secret
-    puts client_secret
 
     appearance = {
       theme: 'stripe',
@@ -58,7 +57,6 @@ class StripePayment < HTMLElement
     e.prevent_default() if e
     self.loading = true
 
-    # http://localhost:4000/payment-thanks?payment_intent=pi_2JnoIMRCdX9HFRHF0XudtcHu&payment_intent_client_secret=pi_2JnoIMRCdX9HFRHF0XudtcHu_secret_N9kmL5WMtxUhKlFmI6qzoFScG&redirect_status=succeeded
     payment_response = await stripe.confirm_payment(
       elements: @elements,
       confirm_params: {
