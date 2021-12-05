@@ -22,7 +22,8 @@
     "webpack-merge": "^5.8.0"
   },
   "resolutions": {
-    "postcss-focus-within": "^4.0.0"
+    "postcss-focus-within": "^4.0.0",
+    "@ruby2js/ruby2js": "^0.2.1"
   },
   "dependencies": {
     "@ruby2js/webpack-loader": "^2.0.2",
