@@ -8,7 +8,8 @@ class StripePayment < HTMLElement
   end
 
   async def display(raw_amount)
-    amount = parse_float(raw_amount)
+    amount = raw_amount.to_f
+
     unless amount
       show_error("The amount you entered isn't a valid number. Please try again.")
       self.closest("sl-dialog").open = false
@@ -35,7 +36,7 @@ class StripePayment < HTMLElement
       api_url,
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(amount: amount)
+      body: { amount: amount }.to_json
     )
     data = await response.json()
     client_secret = data.client_secret
@@ -43,7 +44,7 @@ class StripePayment < HTMLElement
     appearance = {
       theme: 'stripe',
       variables: {
-        colorPrimary: PRIMARY_COLOR,
+        color_primary: PRIMARY_COLOR,
       },
     }
     @elements = stripe.elements(appearance: appearance, client_secret: client_secret)
