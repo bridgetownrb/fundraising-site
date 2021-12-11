@@ -145,7 +145,6 @@ DEPENDENCIES
   dotenv (~> 2.7)
   puma (~> 5.2)
   ruby2js (~> 4.2)
-  serbea
   stripe (~> 5.38)
 
 BUNDLED WITH
