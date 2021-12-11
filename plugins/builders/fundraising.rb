@@ -1,4 +1,4 @@
-class Fundraising < SiteBuilder
+class Builders::Fundraising < SiteBuilder
   def build
     hook :site, :pre_render do
       site.data.funding.percentage =
