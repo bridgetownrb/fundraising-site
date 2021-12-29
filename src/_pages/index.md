@@ -95,7 +95,7 @@ And what would a fundraising campaign be without _stretch goals_?
 * Over **$5000**: write an official upgrade guide for Jekyll users
 * Over **$6000**: create a detailed tutorial with code samples showing Bridgetown and a Rails API (including ActiveRecord!) mounted in the same repo via Rack 🤯
 
-Depending on how this campaign goes, we think it's feasible to release a production-grade Bridgetown 1.0 **in January 2021**, with any immediate follow-up tasks wrapping up by **February 2022**.
+Depending on how this campaign goes, we think it's feasible to release a production-grade Bridgetown 1.0 **in January 2022**, with any immediate follow-up tasks wrapping up by **February 2022**.
 
 </section></section-wrapper>
 
