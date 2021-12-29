@@ -81,19 +81,19 @@ Isn't Ruby dead? ([No.](https://isrubydead.com){:target="_blank"}) What about Ra
 ## Here's What Will Happen
 {:.serif}
 
-Estimating software development?? Are we out of our minds??! Perhaps, but we just want you to know we've thought a lot about what can get done for ${{ site.data.funding.goal | string | replace: '000', ',000'}}. Here's a summary of our plan:
+Estimating software development?? Are we out of our minds??! Perhaps, but we just want you to know we've thought a lot about what can get done for ${{ site.data.funding.goal | string | replace: '000', ',000'}}. Here's a summary of our plan (and some of this is already in works now!):
 
-* Revamp documentation to offer newbie-friendly tutorials and code samples:	**8 hours**
+* Add a _superfast_ esbuild-based frontend bundling solution as an alternative to Webpack: **15 hours**
+* Revamp documentation to offer newbie-friendly tutorials and code samples:	**5 hours**
 * Website rebuild based off rebranded design mockups:	**12 hours**
 * Address outstanding v1 issues: 	**10 hours**
 * Complete YARD comments for API-level documentation:	**5 hours**
 * Shepherd 1.0 alpha/beta/stable release cycle:	**10 hours**
-* Write official upgrade guide for Jekyll users: **5 hours**
 
 And what would a fundraising campaign be without _stretch goals_?
 
-* Over **$5500**: add a _superfast_ esbuild-based frontend bundling solution as an alternative to Webpack
-* Over **$7000**: create a detailed tutorial with code samples showing Bridgetown and a Rails API (including ActiveRecord!) mounted in the same repo via Rack 🤯
+* Over **$5000**: write an official upgrade guide for Jekyll users
+* Over **$6000**: create a detailed tutorial with code samples showing Bridgetown and a Rails API (including ActiveRecord!) mounted in the same repo via Rack 🤯
 
 Depending on how this campaign goes, we think it's feasible to release a production-grade Bridgetown 1.0 **by the end of the year**, with any immediate follow-up tasks wrapping up by **February 2022**.
 
